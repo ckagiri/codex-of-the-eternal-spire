@@ -8,11 +8,11 @@
 
 **Taming the Legacy Beast: A High-Fantasy Guide to Software Engineering**
 
-In the realm of Software Engineering, we often face beasts of legendary difficulty: single source files exceeding 5,000 lines, legacy codebases with no tests, and distributed systems that behave like chaotic magic.
+In the realm of Software Engineering, we often face beasts of legendary difficulty: single source files exceeding **6,000 lines**, legacy codebases with no tests, and distributed systems that behave like chaotic magic.
 
 The **Codex of the Eternal Spire** is a gamified, high-fantasy reimagining of software architecture, leadership, and product strategy.
 
-This repository is a crystallization of the wisdom I have gathered over years of consulting, mentoring, and battling the dragons of legacy code. It translates dry, abstract concepts into a narrative of "The Spire"—a living structure that requires maintenance, defense, and purpose. It gathers the wisdom of the Elders (Martin, Fowler, Brooks, Norman, and others) and distills it into a personal grimoire for surviving the craft.
+This repository is a crystallization of the wisdom I have gathered over years of consulting, mentoring, and battling the dragons of legacy code. It translates dry, abstract concepts into a narrative of "The Spire"—a living structure that requires maintenance, defense, and purpose. It gathers the wisdom of the Elders (Martin, Fowler, Brooks, Norman, and others) and distills it into a personal **manual** for surviving the craft.
 
 ---
 

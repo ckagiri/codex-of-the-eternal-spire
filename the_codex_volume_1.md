@@ -21,7 +21,7 @@
 | **Gang of Four** | **The Architects** | **Structure** | *"Bind not by Blood (Inheritance), but by Oath (Composition). Blood turns against itself."*<br>**(Favor Composition over Inheritance.)** |
 | **Evans & Vernon** | **The Mapmakers** | **Boundaries (DDD)** | *"Chalk the Circle. Let not the mud of the Old World stain the floor of the Sanctum."*<br>**(Bounded Contexts & Anti-Corruption Layers.)** |
 | **Freeman & Pryce** | **The Masons** | **Stability (GOOS)** | *"Necromancy requires a Skeleton before it can summon Flesh."*<br>**(Walking Skeleton: Build end-to-end connectivity first.)** |
-| **Beck & Cunningham** | **The Progenitors** | **Simplicity** | *"Debt is a pact with a Demon. Repay the Principal, or he shall claim the Kingdom."*<br>**(Technical Debt must be paid down or development halts.)** |
+| **Beck & Cunningham** | **The Forefathers** | **Simplicity** | *"Debt is a pact with a Demon. Repay the Principal, or he shall claim the Kingdom."*<br>**(Technical Debt must be paid down or development halts.)** |
 | **Thomas & Hunt** | **The Monks** | **Discipline** | *"A crack in the glass invites the storm. Seal it instantly."*<br>**(Broken Windows Theory: Fix bad code immediately.)** |
 | **Fields & Osherove** | **The Scribes** | **Test Hygiene** | *"A scroll that requires a translator is a trap for the apprentice."*<br>**(DAMP not DRY: Tests must be readable without scrolling.)** |
 | **Gene Kim** | **The Artificer** | **Flow (DevOps)** | *"The blade that rests gathers rust. Draw it daily. It is the idle sword that shatters in battle."*<br>**(Deploy frequently to reduce risk.)** |

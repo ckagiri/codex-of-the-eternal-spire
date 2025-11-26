@@ -124,10 +124,10 @@
 ## 🏹 VIII. THE QUALITY OF THE WILDS (Testing)
 *From the scrolls of Cem Kaner & Donald Gause*
 
-### 1. The Context of the Bug
-**"The Hunter's Wisdom."**
-* **The Lore:** "It works on my machine."
-* **The Law:** **"Quality is Value to Some Person."** A bug to the Merchant might be a feature to the Wizard. Context determines the severity of the monster.
+### 1. The Eye of the Beholder
+**"The Relativity of the Beast."**
+* **The Lore:** "The dragon breathes fire." To the Knight, this is a deadly flaw. To the Blacksmith, this is a perfect forge.
+* **The Law:** **"Quality is defined by the Receiver."** Do not judge the spell by the caster's intent, but by the villager's pain. A bug to the Merchant may be a feature to the Wizard.
 
 ### 2. The Law of Exploration
 **"Quality before Design."**

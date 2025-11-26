@@ -181,9 +181,10 @@
 * **The Curse:** A door that must be pushed but has a handle for pulling.
 * **The Law:** **"Affordance is King."** Good designers do not put handles on unlatched doors that can only be pushed. Visual clues must match the operation.
 
-### 2. The Sign of the Fool
-**"The Manual is a Confession."**
-* **The Law:** **"If it needs a label, it is broken."** When simple things need instruction, it is a certain sign of poor design.
+### 2. The Rune of Intuition
+**"The Form leads the Hand."**
+* **The Lore:** The sword handle does not need a sign saying "Hold Here."
+* **The Law:** **"Affordance is the Guide."** Visual clues must match the operation. When simple things need instruction, the design has failed the user.
 
 ---
 

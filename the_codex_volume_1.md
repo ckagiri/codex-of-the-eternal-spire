@@ -99,7 +99,7 @@
 9.  **The Rune of Binding (Composition > Inheritance):** Do not inherit your father's blood; hire a mercenary. Flexible pacts are stronger than rigid bloodlines.
 10. **The Rune of Abstraction (Design to Interfaces):** Depend on the *Idea* of a sword, not the *Iron* of the sword. This allows you to swap weapons easily.
 11. **The Rune of Creation (Separate Use from Construction):** The Knight does not forge his own sword. The sword is handed to him (Dependency Injection).
-12. **The Rune of Maintenance (Refactor as Needed):** Cleaning is not a separate event; it is part of cooking.
+12. **The Rune of Maintenance (Refactor as Needed):** Removing the slag is not a separate task; it is part of the forging. If you wait until the sword is cold to fix the flaws, the steel will shatter.
 13. **The Rune of Focus (Limit Perspective):** Do not mix the High Elven language (Business Logic) with the Dwarven Runes (SQL) in the same breath. Keep levels of abstraction pure.
 14. **The Rune of Extension (Open-Closed Principle):** Construct the Citadel with open sockets, not solid stone. Allow new wards (Features) to be plugged in (Extension) without cracking the foundation (Modification).
 15. **The Rune of Authority (Single Choice Principle):** "Whenever a system must support a set of alternatives, one and only one module shall know their exhaustive list." Do not scatter the list of Kingdoms across 10 scrolls; keep it in one Atlas.

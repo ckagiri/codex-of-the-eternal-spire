@@ -443,12 +443,10 @@ Assign a "Good First Issue" (A simple bug or rename). Let them deploy to Product
 * **Troll Level (SEV-2):** The Drawbridge is stuck. Major features down.
 * **Rat Level (SEV-3):** The paint is peeling. Minor bug.
 
-### 4. The Scribe's Record (Post-Mortem)
-* **Rule:** Never waste a good crisis.
-* **Action:** After the fire is out, generate a list of "Wards" (Repair Items) to ensure this specific beast can never enter again.
+### 4. The Chronicle of Lessons (The Post-Mortem & Retro)
 
-### 5. The Chronicle of Lessons (Retrospective)
-* **Action:** After the dragon is slain, we do not just bury the dead. We write the Ballad of the Battle, ensuring this specific beast can never enter the castle again.
+* **Rule:** Never waste a good crisis.
+* **Action:** After the dragon is slain, we do not just bury the dead. We write the **Ballad of the Battle** (Incident Report) and erect new **Wards** (Preventative Fixes) to ensure this specific beast can never breach the gates again.
 
 ---
 

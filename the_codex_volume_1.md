@@ -223,36 +223,38 @@
 * **The Single Choice:** Use when the heads represent a fixed list of types. Ensure only **one** module knows the list (Enum/Configuration).
 
 ### ⛓️ Spell: "Chain of Binding" (Chain of Responsibility)
-*Use when: The Scroll of Judgment (`validate()`) is too long.*
-1.  **Cast:** Forge individual Links (`Validator` classes).
-2.  **Ritual:** Connect them into a List.
-3.  **Effect:** The guilty are caught by the first Link that holds them. To add a new law, just forge a new Link.
+*Use when: The Scroll of Laws (`validate()`) has grown too long to read.*
+1. **Cast:** Forge individual Links (`Validator` classes).
+2. **Ritual:** Connect them into a single Chain.
+3. **Effect:** The guilty is caught by the first Link that holds them. To add a new Law, simply forge a new Link and attach it; the Chain need not be broken.
 
-### ⚡ Spell: "Currying the Favor" (Functional Currying)
-*Use when: You pass the same Context (User, Config) to 10 different functions.*
-1.  **Cast:** Create a Function Factory.
-2.  **Ritual:** Pre-load the Context. `Function<Data, Result> processor = makeProcessor(userContext);`
-3.  **Effect:** The Context is hidden (Encapsulated). You pass clean data only.
+### 📜 Spell: "The Partial Seal" (Functional Currying)
+*Use when: You are forced to pass the same Royal Seal (Context/Config) to 10 different peasants.*
+1. **Cast:** Create a Spell Factory.
+2. **Ritual:** Bind the Royal Seal to the spell *before* handing it out.
+   * *Old Magic:* `cast(target, context)`
+   * *New Magic:* `spell = bind(context); spell.cast(target)`
+3. **Effect:** The Peasant need not touch the Royal Seal. The context is encapsulated within the spell itself.
 
-### 🧩 Spell: "The Method Object" (Beck)
-*Use when: A method is so full of local variables you cannot extract sub-methods.*
-1.  **Cast:** Create a new class named after the method.
-2.  **Ritual:** Move all local variables into fields of the new class.
-3.  **Effect:** You can now extract methods easily because they share the fields. The function becomes an Object.
+### ⚱️ Spell: "The Spirit Vessel" (The Method Object)
+*Use when: A method is a tangled web of local variables, too complex to cut apart.*
+1. **The Problem:** You cannot extract a sub-spell because the variables are "The Tangled Web."
+2. **The Ritual:** Exorcise the logic into a new Class (The Vessel).
+3. **The Transfer:** All local variables become **Fields** (The Organs) of the new Vessel.
+4. **The Effect:** The Web is broken. You can now slice the logic into small methods because they all share the same body (Fields).
 
-### 🧶 Spell: "Refactoring to Patterns" (Kerievsky)
-*Use when: You know the destination but the path is blocked.*
-1.  **Rule:** Patterns are not ingredients; they are results.
-2.  **Ritual:** Do not force a Strategy Pattern on Day 1. Refactor the conditional logic first. When the code "begs" for polymorphism, *then* apply the Pattern.
-3.  **Effect:** Avoids the curse of "Over-Engineering."
+### 🌊 Spell: "The Path of Water" (Refactoring to Patterns)
+*Use when: You know the destination, but the path is blocked.*
+1. **The Law:** Patterns are not **Molds**; they are **Echoes**.
+2. **The Ritual:** Do not force a "Strategy Pattern" on Day 1. Simply clean the moss (Conditionals).
+3. **The Effect:** When the code "begs" for polymorphism, the Pattern will reveal itself naturally. Do not carve the river; let the water find the path.
 
-### 🧱 Spell: "The Atomic Brick" (Prefactoring - Pugh)
+### 🧱 Spell: "The Law of Pebbles and Boulders" (Prefactoring - Pugh)
 *Use when: You are designing a new feature and tempted to make one big "Manager" class.*
-
-1.  **The Fear:** "If I make 10 small classes, it will be hard to manage."
-2.  **The Reality:** You can easily wrap 10 small classes in a Facade (Lumping). You cannot easily rip apart 1 giant class that shares state (Splitting).
-3.  **The Cast:** Create a separate class for every distinct responsibility *before* you think you need it.
-4.  **Effect:** The system remains granular and fluid.
+1. **The Fear:** "If I create 10 small pebbles, I will lose them."
+2. **The Reality:** You can easily gather 10 pebbles into a Bag (Facade). You cannot easily shatter a Boulder (God Class) without destroying what is inside.
+3. **The Cast:** Create a separate class for every distinct responsibility.
+4. **Effect:** **Lumping** (Bagging pebbles) is easy. **Splitting** (Cracking boulders) is dangerous. Always default to the Pebble.
 
 ---
 

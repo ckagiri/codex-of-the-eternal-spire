@@ -118,11 +118,11 @@
     2.  Is there a Bounty? **No.** $\rightarrow$ Leave immediately.
     3.  Is there a Bounty? **Yes.** $\rightarrow$ Clean the room first (Pay Principal), *then* kill the beast (Pay Interest).
 
-### 🏰 2. The Law of the Citadel (Hexagonal Architecture)
+### 2. The Law of the Citadel (Hexagonal Architecture)
 **"Protect the Throne at all costs."**
-* **The Throne Room (Core Domain):** Pure Java Records. No dark magic (Frameworks like Spring/Hibernate) allowed here. The King does not know SQL.
-* **The Walls (Ports):** Iron Interfaces defining needs (`IUserRepository`).
-* **The Outlands (Adapters):** The muddy fields where the Databases and APIs live.
+* **The Throne Room (Core Domain):** Pure Logic. No dark magic (External Frameworks) allowed here. The King speaks only the High Language of the Domain, never the dialect of the Database (SQL).
+* **The Walls (Ports):** Iron Interfaces defining needs (The Storage Contracts).
+* **The Outlands (Adapters):** The muddy fields where the Infrastructure, Databases, APIs and Networks live.
 * **The Law:** **The Dependency Rule.** The Mud may look at the Wall, but the Throne never looks at the Mud. All dependencies point Inward.
 
 ### 🧬 3. The Law of the Twin Spirits (Shalloway’s N-1)
@@ -439,9 +439,12 @@ Assign a "Good First Issue" (A simple bug or rename). Let them deploy to Product
 * **Action:** If a spell backfires, do not try to "fix it real quick." **Revert.** Restore the timeline first. Diagnose later.
 
 ### 3. The Danger Levels (SEV)
-* **Dragon Level (SEV-1):** The Castle is burning. Wake the King.
-* **Troll Level (SEV-2):** The Drawbridge is stuck. Major features down.
-* **Rat Level (SEV-3):** The paint is peeling. Minor bug.
+
+* **The Dragon (SEV-1):** The Castle is burning. The Vault is open. Wake the King immediately. (Total System Outage).
+* **The Giant (SEV-2):** The Main Gate is smashed. The Merchants cannot enter. Send the Knights. (Critical Feature Down / No Workaround).
+* **The Troll (SEV-3):** The Drawbridge is stuck. Villagers must take the long path around. (Feature Degraded / Workaround Available).
+* **The Goblin (SEV-4):** A thief in the pantry. The bread is burnt (Minor feature broken / Minor Bug/ UI Glitch).
+* **The Rat (SEV-5):** Squeaking in the walls. The paint is peeling (Trivial / Documentation / Cosmetic / Typo).
 
 ### 4. The Chronicle of Lessons (The Post-Mortem & Retro)
 

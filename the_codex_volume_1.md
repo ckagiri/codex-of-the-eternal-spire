@@ -57,7 +57,7 @@
 **"Do not send the Legion where a Scout will suffice."**
 * **The Curse:** Building a massive Cathedral when a tent would solve the problem.
 * **The Law:** **Riskiest Assumption Tested (RAT).**
-* **The Action:** Before coding the Legacy Integration, build a "Fake Door" (UI Mockup) to see if the villagers even want the feature.
+* **The Action:** Before coding the Legacy Integration, cast an Illusion (Mockup). If the villagers try to touch the illusion, then you may build the reality.
 
 ---
 
@@ -72,30 +72,30 @@
 * **Code:** Draw the Furniture (Classes/Interfaces).
 * **The Rule:** Do not draw the Furniture until you understand the Castle.
 
-### 2. The Book of Decisions (ADRs)
+### 2. The Tablets of the Law / The Book of Decisions (ADRs)
 **"Carve the decision in stone."**
 * **The Problem:** "Why did the Ancestors use XML?"
-* **The Solution:** **Architecture Decision Records.**
+* **The Solution:** **Architecture Decision Records.** Carve the decisions in stone.
 * **Format:** `Status: Accepted` | `Context: JSON was too slow in 2010` | `Decision: Use XML` | `Consequences: Hard to parse`.
 
 ### 3. The Living Documentation
 **"Paper rots. Code lives."**
-* **The Rule:** Do not write a Wiki that no one reads.
-* **The Action:** Put the documentation **in the repo** (`/docs`). Generate diagrams from code (Structurizr) so they never lie.
+* **The Rule:** Do not fill The Great Library with scrolls (wiki) that gather dust.
+* **The Action:** Put the documentation **in the repo** (`/docs`). Generate maps from the code (Structurizr) so they never lie.
 
 ---
 
 ## 💎 IV. THE 15 RUNES OF CRAFTSMANSHIP (Daily Practice)
 *The Code of Conduct for every spell cast. To violate the Rune is to invite the Bug.*
 
-1.  **The Rune of Foresight (Write Tests First):** Design the spell's outcome before you weave the magic. This prevents the creation of untestable monsters.
+1.  **The Rune of Prophecy (Write Tests First):** The end must be written before the beginning. Define the Prophecy (Test) first; only then weave the spell (Code) to fulfill it. This prevents the creation of untestable monsters.
 2.  **The Rune of Narrative (Code by Intention):** The code must read like a story (`applyDiscount()`), not a math textbook (`price * 0.8`). Hide the math in the footnotes.
 3.  **The Rune of Clarity (Write Clearly):** Names are power. A variable named `x` has no soul. Name it `daysToExpiry`.
 4.  **The Rune of Mystery (Encapsulate by Convention):** Hide your internal organs. Reveal only what the neighbor needs to see.
 5.  **The Rune of Unity (Once and Only Once):** A truth split in two becomes a lie. Logic must exist in one place.
 6.  **The Rune of Thrift (YAGNI):** Do not pack for a journey you are not taking. Build only what is needed *today*.
 7.  **The Rune of Isolation (Pull Out Variance):** Separate the volatile magic (Business Rules) from the stable stone (Infrastructure).
-8.  **The Rune of Kinship (Conceptually Similar):** Treat the Credit Card and the Gold Coin the same. Use a common Interface.
+8.  **The Rune of Kinship (Conceptually Similar):** Treat the Royal Letter of Credit and the Gold Coin the same. They are both Currency. Use a common Interface.
 9.  **The Rune of Binding (Composition > Inheritance):** Do not inherit your father's blood; hire a mercenary. Flexible pacts are stronger than rigid bloodlines.
 10. **The Rune of Abstraction (Design to Interfaces):** Depend on the *Idea* of a sword, not the *Iron* of the sword. This allows you to swap weapons easily.
 11. **The Rune of Creation (Separate Use from Construction):** The Knight does not forge his own sword. The sword is handed to him (Dependency Injection).
@@ -260,15 +260,17 @@
 *The Artificer’s Guide to keeping the army fed.*
 
 ### 🚂 1. The Iron Train (The Pipeline)
-* **Rule:** The Train leaves every hour.
+* **Rule:** The Magic flows continuously. It does not stagnate.
+* **The Caravan:** Small wagons (Commits) move faster than giant siege towers (Batch Releases).
 * **Trunk-Based Dev:** No long-lived branches. Merge to the main line daily.
 * **Feature Flags:** Invisibility Cloaks. The code is on the train, but the passengers cannot see it until you flip the switch.
 
 ### 🧪 2. The Alchemy Lab (Hermetic Builds)
 * **Rule:** It works in the Lab (Docker), it works on the Battlefield.
 * **Ban:** "It works on my machine."
-* **Artifact:** **The Golden Image.** Build one container. Deploy that exact container to Staging and Production.
-
+* **Action:** Bake the magic into a Sealed Vessel (Image). Do not open the vessel to change the spell later; cast a new one.
+* **Artifact:** **The Sealed Vessel (Immutable Image).** Bake the magic into a single Vessel. Transport that exact Vessel to the Proving Grounds (Staging) and the Battlefield (Production). Never open the Vessel to change the spell; cast a new one.
+  
 ### 📜 3. The Chronicle of Change (Database Versioning)
 * **Rule:** The Librarian (Liquibase/Flyway) controls the scrolls.
 * **The Bridge of Transition (Parallel Change):** *How to rename a column without stopping time.*
@@ -378,7 +380,7 @@
 | **The Parasite** | Feature Envy | **Move Method** |
 | **The Medusa** | Hard Dependencies | **Dependency Injection (Factory)** |
 | **The Knot** | Circular Dependency | **Mediator** |
-| **The Arrow** | Nested Ifs | **Guard Clauses** |
+| **The Labyrinth** | Deeply Nested Ifs | **Guard Clauses** |
 | **The Zombie** | Dead Code | **Delete (Git History)** |
 | **The Poltergeist** | Short-lived objects with no purpose | **Inline Class** |
 | **The Lava Flow** | Code nobody understands or touches | **Characterization Tests** |
@@ -445,6 +447,9 @@ Assign a "Good First Issue" (A simple bug or rename). Let them deploy to Product
 * **Rule:** Never waste a good crisis.
 * **Action:** After the fire is out, generate a list of "Wards" (Repair Items) to ensure this specific beast can never enter again.
 
+### 5. The Chronicle of Lessons (Retrospective)
+* **Action:** After the dragon is slain, we do not just bury the dead. We write the Ballad of the Battle, ensuring this specific beast can never enter the castle again.
+
 ---
 
 ## 🤝 XVII. THE OATH OF THE FELLOWSHIP (Culture & Conflict)
@@ -499,9 +504,9 @@ Assign a "Good First Issue" (A simple bug or rename). Let them deploy to Product
 * **Rule:** Never write a password in the Book of Code.
 * **Action:** Hardcoded secrets are forbidden. Use a **Vault**. The code only knows the path to the Vault, not the key itself.
 
-### 4. The Whispers of Command (Injection)
-* **Rule:** Data is not Code.
-* **Action:** Never concatenate Strings into SQL (`"SELECT * FROM " + user`). Use Prepared Statements. Validate all input at the Gate.
+### 4. The Curse of the False Tongue (Injection)
+* **Rule:** "Speech is not a Spell."
+* **The Action:** **Bind the Inputs.** Treat the Villager's words as inert stone (Data), never as magic (Code). Use Prepared Statements to ensure that even if they speak a command, it is heard only as a whisper.
 
 ### 5. The Ban of Home-Brewed Magic (Crypto)
 * **Rule:** Do not invent your own spells.
@@ -512,10 +517,11 @@ Assign a "Good First Issue" (A simple bug or rename). Let them deploy to Product
 ## ⚖️ XX. THE TITAN'S ENDURANCE (Scaling & Performance)
 *How to hold the weight of the world without breaking your back.*
 
-### 1. The Giant's Blueprint (Law of the 10x)
-**"Design for a Titan, Build for a Human."**
-* **The Law:** Your architecture should *conceptually* support 10x current traffic, but your infrastructure should only be provisioned for 1x.
-* **The Action:** Do not implement Sharding until you actually hit the limits of a vertical upgrade.
+### 1. The Titan's Foundation (Scalability)
+**"The Palace Blueprint, The Cottage Brick."**
+* **The Lore:** If you build a cottage on sand, you must tear it down to build a castle. If you build a castle for one man, the maintenance will bankrupt you.
+* **The Law:** **"Design for the Horde, Provision for the Scout."** The Architecture (Logic) must be ready to support the Titan (10x), but the Infrastructure (Hardware) must only be paid for the Human (1x).
+* **The Action:** Do not fracture the earth (Sharding) until the single mountain (Vertical Scaling) can no longer hold the sky.
 
 ### 2. The Shatter Ward (Circuit Breaker)
 **"Do not cast spells at a dead god."**

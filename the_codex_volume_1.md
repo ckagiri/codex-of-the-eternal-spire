@@ -662,42 +662,49 @@ In the Aether, the roads *will* be severed (Network Partitions). You cannot reje
 #### Conway's Mirror
 **Verse**
 The guild shapes the castle; the castle reveals the guild.
+
 **Rationale**
 Make team boundaries visible design levers: when coupling shows its teeth, change the guild or redraw the walls so the architecture can breathe.
 
 #### Sustainability Shrine
 **Verse**
 Code must not bleed the land; the Spire must endure without starving the fields.
+
 **Rationale**
 Treat energy, cost, and efficiency as first‑class metrics for long‑lived systems; prefer patterns that conserve resources where they matter most.
 
 #### Security Watchtower
 **Verse**
 Patrol the walls nightly; trust no bridge without a rune.
+
 **Rationale**
 Embed continuous threat thinking, secrets hygiene, and least‑privilege practices into every adapter and deploy so the realm stays defended.
 
 #### Architecture Runes
 **Verse**
 Small runes guide the mason; heavy spells are for cathedrals.
+
 **Rationale**
 For small to medium realms, prefer lightweight architectural guardrails: simple deployability checks, basic coupling signals, and a few automated health gates rather than heavyweight formalism.
 
 #### Trials of Resilience
 **Verse**
 Rehearse the storm in the courtyard; do not summon tempests you cannot tame.
+
 **Rationale**
 Favor modest, safe resilience rehearsals—smoke tests, staged fault simulations, and game‑day walkthroughs in non‑production—so the fortress learns to recover without grand experiments.
 
 #### Bard of Knowledge
 **Verse**
 Sing the onboarding song so new adventurers may find the lore.
+
 **Rationale**
 Convert tribal knowledge into a one‑hour tour, living ADRs, and discoverable lore so knowledge survives turnover and travel.
 
 #### Technical Debt Ledger
 **Verse**
 Debt is currency in the Royal Treasury; spend it with a plan or be taxed by entropy.
+
 **Rationale**
 Keep a visible, prioritized ledger of debt items with business owners and repayment plans; treat debt like budgeted work, not shame.
 

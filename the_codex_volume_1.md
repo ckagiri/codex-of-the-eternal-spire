@@ -399,20 +399,54 @@
 
 ---
 
-## 📜 XIV. THE SCROLLS OF TRUTH (Advanced Testing)
-*Without the Scrolls, we are lost in the dark.*
+## 📜 XIV. THE SCROLLS OF TRUTH & THE HALL OF MIRRORS (The Discipline of Verification)
 
-### 1. The Golden Master (Feathers)
-* **Ritual:** Before touching the cursed artifact, cast a mold of it (Capture Output).
-* **Use:** If your cleaning changes the mold, you have failed.
+*Without the Mirror, the Wizard sees only what they wish to see - The Mirror reveals the ugly truth; Without the Scrolls, we are lost in the dark.*
 
-### 2. The Pact (Contract Testing)
-* **Problem:** The Strangler Fig breaks when the Monolith and Microservice disagree on JSON format.
-* **Solution:** **Pact Tests.** The Consumer defines the rules. The Provider must obey.
+### 1. The Pyramid of Defense (The Test Pyramid)
+* **The Lore:** A fortress with a heavy top topples in the wind. A fortress with a wide base stands eternal.
+* **The Law:** **"Wide Base, Narrow Peak."**
+    * **The Stones (Unit Tests):** Thousands. Fast as thought. Test the Spell logic, never the World.
+    * **The Mortar (Integration Tests):** Hundreds. Slower. Does the Spell fit the Wand? (Does the Service talk to the DB?).
+    * **The Watchtower (E2E Tests):** Few. Slow. Fragile. Only check if the smoke rises from the chimney. **Do not mobilize the entire Legion just to catch a single goblin.**
 
-### 3. The Oracle (Property-Based Testing)
-* **Problem:** You test `add(2, 2)` but forget `add(MAX_INT, 1)`.
-* **Solution:** **Jqwik.** Tell the Oracle "For all Integers X and Y, `add(x,y)` should equal `add(y,x)`." The Oracle tries 1,000 random numbers to break you.
+### 2. The Ritual of Prophecy (TDD)
+* **The Lore:** The Amateur casts the spell, then checks if it worked. The Grandmaster writes the History before it happens.
+* **The Law:** **"The Prophecy precedes the Event."**
+    1. **The Omen (Red):** Write the Test. Watch it fail. The Prophecy is spoken.
+    2. **The Fulfillment (Green):** Write *just enough* magic to make the Test pass.
+    3. **The Polishing (Refactor):** Clean the mana. The code is now safe to reshape, for the Prophecy protects it.
+
+### 3. The Mirror of Stasis (Golden Master / Approval Tests)
+* **Use when:** You face the **Legacy Beast** (6,000 lines of code) that no one understands.
+* **The Ritual:** Capture the Beast's Breath (The Output). Freeze it in Amber (Save to File).
+* **The Law:** **"The Amber must not Crack."** You may change the internal organs of the code, but if the Output changes by a single character, you have failed. The behavior must be pinned until the refactoring is complete.
+
+### 4. The Simulacrum (Mocking & Isolation)
+* **The Lore:** To test the "Bank Transfer" spell, you cannot summon the *actual* Royal Treasury every time.
+* **The Law:** **"Summon the Phantasm."**
+    * Do not test the Database; assume the Database works.
+    * Use a **Simulacrum** (Mock) to stand in for external systems.
+    * **Warning:** If you Mock everything, you test nothing. A battle against ghosts proves no valor.
+
+### 5. The Treaty of the Guilds (Contract Testing)
+* **The Lore:** When the **Tower of Glass** (Frontend) requests supplies from the **Deep Mines** (Backend), the shipment often fails because the labels changed.
+* **The Law:** **"Sign the Pact."**
+    * The Tower defines the **Treaty** ("We need a field named `userId`").
+    * The Mines must honor this Treaty in their daily rituals (Build Pipeline).
+    * If the Overseer of the Mines changes the API structure without warning, the Treaty burns, and the shipment is halted.
+
+### 6. The Rune of Legibility (Test Hygiene)
+* **The Lore:** A test that requires a deciphering scroll is a trap.
+* **The Law:** **"DAMP, not DRY."**
+    * In the Spire (Production Code), we do not repeat ourselves (DRY).
+    * In the Hall of Mirrors (Test Code), we tell descriptive stories (Descriptive And Meaningful Phrases).
+    * It is better to repeat three lines of setup than to hide the meaning in a "Helper Utils" class that no one can find.
+
+### 7. The False Shield (Code Coverage)
+* **The Lore:** The King demands that every inch of the wall be guarded (100% Coverage).
+* **The Trap:** A soldier may stand on the wall but be asleep.
+* **The Law:** **"Coverage measures Silence, not Safety."** It tells you which code is *not* tested. It does not tell you if the tested code works. Do not worship the number.
 
 ---
 
